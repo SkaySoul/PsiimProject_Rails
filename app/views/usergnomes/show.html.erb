@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @usergnome %>
+
+<div>
+  <%= link_to "Edit this usergnome", edit_usergnome_path(@usergnome) %> |
+  <%= link_to "Back to usergnomes", usergnomes_path %>
+
+  <%= button_to "Destroy this usergnome", @usergnome, method: :delete %>
+</div>

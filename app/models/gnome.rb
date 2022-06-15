@@ -1,0 +1,2 @@
+class Gnome < ApplicationRecord
+end

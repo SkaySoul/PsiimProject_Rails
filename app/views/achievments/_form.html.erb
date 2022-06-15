@@ -1,0 +1,17 @@
+<%= form_with(model: achievment) do |form| %>
+  <% if achievment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(achievment.errors.count, "error") %> prohibited this achievment from being saved:</h2>
+
+      <ul>
+        <% achievment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

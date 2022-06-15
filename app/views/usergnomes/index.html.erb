@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Usergnomes</h1>
+
+<div id="usergnomes">
+  <% @usergnomes.each do |usergnome| %>
+    <%= render usergnome %>
+    <p>
+      <%= link_to "Show this usergnome", usergnome %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New usergnome", new_usergnome_path %>
